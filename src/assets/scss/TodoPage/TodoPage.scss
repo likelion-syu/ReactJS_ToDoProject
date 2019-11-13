@@ -1,0 +1,53 @@
+html,body{
+    width : 100%;
+    min-height : 100%;
+    margin : 0;
+    padding : 0;
+}
+
+.divider{
+    padding : 10px;
+    &.divider-red{
+        border : 2px solid red;
+    }
+    &.divider-orange{
+        border : 2px solid orange;
+    }
+    &.divider-green{
+        border : 2px solid green;
+    }
+    &.divider-blue{
+        border : 2px solid blue;
+    }
+    &.divider-sienna{
+        border : 2px solid sienna;
+    }
+}
+
+// divider를 보지않기
+.no-divider{
+    .divider{
+        border : none !important;
+    }
+}
+
+.todopage-container{
+    width : 1000px;
+    margin : auto;
+    
+    .todopage-list-container{
+        .item{
+            
+            margin: 10px 0;
+            .item-desc{
+                display:inline-block;
+            }
+            button{
+                float: right;
+                margin-top:18px;
+                margin-right : 20px;
+            }
+        }
+    }
+}
+
