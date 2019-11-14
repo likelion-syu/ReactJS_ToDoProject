@@ -18,19 +18,21 @@ function TodoPage(props) {
     }
 
     return (
-        <div className="todopage-container divider divider-red">
-            <h2>
-                To-Do Project
-            </h2>
-            <hr/>
-            {/* 이 부분은 ToDoInput.js을 찾아 들어가면 만날 수 있습니다. */}
-            {/* 특이한 점은 onCreate라는 이름으로 함수를 자식 컴포넌트에게 넘겨주는 것 입니다. */}
-            {/* 부모 컴포넌트의 함수를 자식 컴포넌트에게 넘겨주면 자식 컴포넌트가 부모 컴포넌트 기능을 쓸 수 있습니다. */}
-            <ToDoInput onCreate={handleCreate}/>
-            <hr/>
-            {/* 이 부분은 ToDoList.js을 찾아 들어가면 만날 수 있습니다. */}
-            {/* List로 출력할 아이템들은 items에 해당됩니다. */}
-            <ToDoList items={items}/>
+        <div className="">
+            <div className="todopage-container divider divider-red">
+                <h2>
+                    To-Do Project
+                </h2>
+                <hr/>
+                {/* 이 부분은 ToDoInput.js을 찾아 들어가면 만날 수 있습니다. */}
+                {/* 특이한 점은 onCreate라는 이름으로 함수를 자식 컴포넌트에게 넘겨주는 것 입니다. */}
+                {/* 부모 컴포넌트의 함수를 자식 컴포넌트에게 넘겨주면 자식 컴포넌트가 부모 컴포넌트 기능을 쓸 수 있습니다. */}
+                <ToDoInput onCreate={handleCreate}/>
+                <hr/>
+                {/* 이 부분은 ToDoList.js을 찾아 들어가면 만날 수 있습니다. */}
+                {/* List로 출력할 아이템들은 items에 해당됩니다. */}
+                <ToDoList items={items}/>
+            </div>
         </div>
     );
 }
